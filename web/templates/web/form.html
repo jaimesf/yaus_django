@@ -1,0 +1,17 @@
+<html>
+
+    <body>
+        {% if error %}
+            <h3>{{ error }}</h3><br>
+        {% endif %}
+
+        <form role="form" action="{% url 'public:creator' %}" method="POST">
+                        {% csrf_token %}
+                {{ form.url.label_tag }}
+                {{ form.url }}
+            <input type="submit" value="Short"/>
+
+        </form>
+
+    </body>
+</html>

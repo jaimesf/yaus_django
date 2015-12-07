@@ -1,0 +1,11 @@
+<html>
+
+    <body>
+        <h3>URL shorted for {{ original_url }}</h3>
+        <label for="url">URL shorted</label>
+        <input name="url" id="url" type="text" readonly value="{{ shorted_url }}"/>
+        <br><br>
+        <a href="{% url 'public:creator' %}">Short another URL</a>
+
+    </body>
+</html>
