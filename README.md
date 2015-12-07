@@ -15,12 +15,12 @@ You can install all python dependencies executing _pip3 install -r requirements.
 
 ### Configs
 
-* Change connect data for mongodb database on yaus/settings.py _connect('<database_name', username='<username_database>', password='<password_database>')_ to your own data
+* Change connect data for mongodb database on yaus/settings.py
 
 * Change yaus/settings.PROTOCOL to your server protocol
 
 * Change yaus/settings.HOSTNAME to your server hostname
 
-* Change yaus/settings.PORT to your server protocol if necessary (No needed on port 80, or 443 on https) o leave it blank
+* Change yaus/settings.PORT to your server protocol if necessary (No needed on port 80, or 443 on https)
 
 To run YAUS, execute _python3 manage.py runserver localhost:8000_
